@@ -1,0 +1,59 @@
+.tracker-container {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.tracker-status {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.tracker-title {
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.tracker-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tracker-event {
+  background: #fff;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-bottom: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tracker-event-status {
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.tracker-event-date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.tracker-event-note {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.tracker-empty {
+  color: #888;
+  font-style: italic;
+  margin: 0.3rem 0 0;
+}
+

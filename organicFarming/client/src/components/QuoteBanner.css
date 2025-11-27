@@ -1,0 +1,58 @@
+/* QuoteBanner.css */
+
+/* Container */
+.hp-quote {
+  position: relative;
+  margin-top: 40px;
+  min-height: 400px;
+  overflow: hidden;        /* important for the reveal */
+}
+
+/* Background image we animate */
+.hp-quote-img {
+  position: absolute;
+  inset: 0;                /* top:0 right:0 bottom:0 left:0 */
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  transform: scale(1.12) translateY(30px); /* start slightly zoomed & lowered */
+  opacity: 0;
+  transition:
+    transform 900ms cubic-bezier(.2,.65,.2,1),
+    opacity 900ms ease;
+}
+
+/* Overlay */
+.hp-quote-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.35);
+}
+
+/* Content */
+.hp-quote-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 54px 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.hp-quote blockquote {
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 8px;
+  font-weight: 500;
+}
+.hp-quote cite {
+  opacity: .9;
+  font-style: normal;
+}
+
+/* Reveal states */
+.reveal.in-view .hp-quote-img {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}

@@ -1,0 +1,87 @@
+.leasing-page {
+  padding: 2rem;
+  background: #f9fafb;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.back-btn {
+  background: #16a34a;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.back-btn:hover {
+  background: #15803d;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+.sub {
+  margin-bottom: 2rem;
+  color: #6b7280;
+}
+
+.sites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.site-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+.site-card:hover {
+  transform: translateY(-5px);
+}
+
+.site-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 180px;
+  background: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6b7280;
+}
+
+.site-info {
+  padding: 1rem;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 0.8rem;
+}
+
+.site-contact-btn {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background: #16a34a;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.site-contact-btn:hover {
+  background: #15803d;
+}

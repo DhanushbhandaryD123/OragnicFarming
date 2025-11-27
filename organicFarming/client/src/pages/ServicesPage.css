@@ -1,0 +1,83 @@
+.services-page {
+  /* max-width: 1000px; */
+  /* margin: 2rem auto; */
+  padding-top: 1rem;
+}
+.services-page h2 {
+  margin-bottom: 0.5rem;
+}
+.services-page p {
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+/* DARK CONTACT BAR (like your screenshot) */
+.ab-bar {
+  background: #0f1827;        /* deep navy */
+  color: #e9f1ff;             /* light text */
+  /* margin: 24px auto; */
+  border-radius: 0;            /* set to 12px if you want rounded outer corners */
+  overflow: hidden;            /* keep inner radius clean if you round it */
+}
+
+.ab-bar-inner {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 16px;
+  text-align: center;
+  padding: 36px 24px;
+}
+
+.ab-col .title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.ab-col .value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #cfe1ff;             /* slightly cooler light blue for contrast */
+  word-break: break-word;
+}
+
+/* Bottom strip with divider */
+.ab-bar-footer {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 16px 12px 22px;
+  text-align: center;
+}
+
+.ab-bar-footer .social {
+  display: inline-flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+.ab-bar-footer .social a {
+  color: #b8c7e6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color .15s ease;
+}
+
+.ab-bar-footer .social a:hover {
+  color: #ffffff;
+}
+
+.ab-bar-footer .copy {
+  color: #b8c7e6;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .ab-bar-inner {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 28px 16px;
+  }
+  .ab-col { padding: 8px 0; }
+}

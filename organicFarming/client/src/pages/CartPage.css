@@ -1,0 +1,176 @@
+/* src/pages/CartPage.css */
+
+.cart-page {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.cart-layout {
+  display: flex;
+  gap: 2rem;
+}
+
+/* ----- Left column ----- */
+
+.cart-items {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  background: #fafafa;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.cart-item-details h4 {
+  margin: 0 0 0.25rem;
+}
+
+.cart-item-details p {
+  margin: 0.25rem 0;
+}
+
+.cart-total {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.btn-clear {
+  background: #c62828;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-clear:hover {
+  background: #b71c1c;
+}
+
+/* ----- Right column ----- */
+
+.shipping-form {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  background: #fafafa;
+}
+
+.shipping-form h3 {
+  margin-top: 0;
+}
+
+.shipping-form label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-weight: 500;
+}
+
+.shipping-form input,
+.shipping-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-checkout {
+  display: block;
+  width: 100%;
+  margin-top: 1.5rem;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-checkout:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ----- Empty cart fallback ----- */
+
+.empty-cart {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.2rem;
+}
+.payment-options {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.payment-options label {
+  cursor: pointer;
+}
+
+.payment-options input {
+  margin-right: 0.5rem;
+}
+
+/* Quantity control container */
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.quantity-control button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.quantity-control button:hover {
+  background-color: #218838;
+}
+
+.quantity-control input {
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Remove button */
+.btn-remove {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  margin-top: 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-remove:hover {
+  background-color: #c82333;
+}

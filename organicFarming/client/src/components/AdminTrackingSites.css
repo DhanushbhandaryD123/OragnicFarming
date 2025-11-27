@@ -1,0 +1,44 @@
+.tracking-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.chart-wrapper {
+  margin-bottom: 30px;
+}
+
+.tracking-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tracking-table th, .tracking-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.tracking-table th {
+  background: #16a34a;
+  color: #fff;
+}
+
+.highlight-row {
+  background-color: #f0fdf4;
+}
+
+.call-count {
+  color: #1f77b4;
+  font-weight: bold;
+}
+
+.whatsapp-count {
+  color: #ff7f0e;
+  font-weight: bold;
+}
+
+.total-count {
+  font-weight: bold;
+}

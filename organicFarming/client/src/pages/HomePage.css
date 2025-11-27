@@ -1,0 +1,268 @@
+
+/* Base */
+.hp { 
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; 
+  color:#2b2b2b; 
+  line-height:1.6;
+}
+.brand { color:#ff6a00; font-weight:700; }
+
+/* HERO */
+.hp-hero {
+  background: linear-gradient(180deg,#fff 0,#f7fbff 100%);
+  padding: 72px 16px 48px;
+}
+.hp-hero-inner {
+  max-width: 1100px; margin: 0 auto; text-align: center;
+}
+.hp-hero h1 { 
+  font-size: 36px; 
+  margin: 0 0 14px; 
+  font-weight: 800; 
+  color:#111;
+}
+.hp-hero p { 
+  margin: 0 auto 22px; 
+  color:#555; 
+  font-size:16px;
+  max-width: 720px; 
+}
+.hp-cta-img {
+  cursor: pointer;
+  width: 200px; 
+  height: auto;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.hp-cta-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+.hp-hero-illustration { margin-top: 32px; }
+.hp-hero-illustration img { width: 100%; max-width: 680px; }
+
+/* WAYS TO BUY */
+.hp-ways { padding: 56px 16px; background:#fff; }
+.hp-ways h2 { text-align:center; font-size: 22px; font-weight: 700; margin-bottom: 26px; }
+.hp-ways-grid {
+  max-width: 1100px; margin: 0 auto;
+  display:grid; gap:20px;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+}
+.hp-way-card {
+  background:#fff; 
+  border:1px solid #eee; 
+  border-radius: 14px; 
+  overflow:hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,.05);
+}
+.hp-way-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+.hp-way-card .img-wrap { height: 150px; background:#f5f5f5; overflow:hidden; }
+.hp-way-card img { width:100%; height:100%; object-fit:cover; }
+.hp-way-card h3 { font-size:13px; letter-spacing:.4px; color:#ff6a00; margin:12px 14px 6px; }
+.hp-way-card p { margin:0 14px 16px; color:#5f6368; font-size:14px; line-height:1.5; }
+
+/* CONTACT */
+.hp-contact { padding: 56px 16px; background:#fff; }
+.hp-contact h3 { text-align:center; margin:0 0 20px; font-size:20px; font-weight:700; }
+.hp-contact-grid {
+  max-width: 900px; margin: 0 auto 22px;
+  display:grid; gap:18px; grid-template-columns: repeat(3,1fr);
+}
+.hp-contact-card {
+  display:flex; gap:14px; align-items:center; 
+  background:#fafafa; border:1px solid #eee; 
+  border-radius:12px; padding:16px;
+  transition: box-shadow 0.2s ease;
+}
+.hp-contact-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+.hp-contact-card .icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hp-contact-card .icon img {
+  width: 50px;
+  height: 50px;
+}
+.hp-contact-card .text strong { display:block; font-size:12px; color:#5f6368; }
+.hp-contact-card .text span { font-weight:700; font-size:14px; }
+
+/* PHONE PREVIEW */
+.hp-phone-preview {
+  display:grid; gap:24px; grid-template-columns: 280px 1fr; align-items: center;
+  margin-left: 20%;
+  margin-top: 60px;
+}
+.hp-phone-preview .phone img { 
+  width:100%; height:100%; border-radius: 28px; 
+  object-fit: cover; background:#fff; 
+}
+.hp-phone-points { list-style:none; padding:0; margin:0; }
+.hp-phone-points li { margin:0 0 14px; font-size:14px; }
+
+/* QUOTE */
+.hp-quote {
+  position:relative; margin-top: 50px;
+  background: url('photo-1615829254885-d4bfd5ce700e.avif') center/cover no-repeat, #1f2937;
+  min-height: 280px;
+}
+.hp-quote-overlay { position:absolute; inset:0; background:rgba(0,0,0,.35); }
+.hp-quote-inner {
+  position:relative; z-index:1; max-width:900px; margin:0 auto; padding:60px 16px; color:#fff; text-align:center;
+}
+.hp-quote blockquote { font-size:18px; line-height:1.7; margin:0 0 10px; font-weight:500; }
+.hp-quote cite { opacity:.9; font-style:normal; font-size:14px; }
+
+/* APP CTA */
+.hp-app-cta { padding: 48px 16px; text-align:center; background:#fff; }
+.hp-app-cta .seed { width:56px; height:56px; margin:0 auto 10px; background:#ff6a00; border-radius:16px; }
+.hp-app-cta h3 { margin: 6px 0; font-size:20px; font-weight:700; }
+.hp-app-cta p { color:#5f6368; margin:0 0 14px; }
+.store-badges { display:flex; gap:12px; justify-content:center; }
+.badge {
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:12px 16px; border-radius:12px; 
+  border:1px solid #e5e7eb; color:#111; 
+  background:#fff; text-decoration:none; 
+  font-weight:700;
+  transition: background 0.2s ease;
+}
+.badge:hover { background:#f9fafb; }
+
+/* FEATURES */
+.hp-features { padding: 40px 16px; background:#fff; }
+.hp-features h2 { text-align:center; margin:0 0 4px; font-size:22px; font-weight:700; }
+.hp-features .sub { text-align:center; color:#6b7280; margin:0 0 22px; }
+.hp-features-grid {
+  max-width: 1100px; margin: 0 auto;
+  display:grid; gap:18px; grid-template-columns: repeat(6,minmax(0,1fr));
+}
+.hp-card { 
+  background:#fff; border:1px solid #eee; border-radius:12px; 
+  overflow:hidden; transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+.hp-card img { width:100%; height:140px; object-fit:cover; }
+.hp-card h4 { margin:10px 12px 6px; font-size:14px; font-weight:600; }
+.hp-card p { margin:0 12px 14px; color:#6b7280; font-size:13px; }
+
+/* RECIPES */
+.hp-recipes { padding: 32px 16px 48px; background:#fff; }
+.hp-recipes h3 { text-align:center; margin:0 0 16px; font-size:20px; }
+.hp-recipes-grid {
+  max-width: 1100px; margin: 0 auto 16px;
+  display:grid; gap:16px; grid-template-columns: repeat(4,minmax(0,1fr));
+}
+.hp-recipe { 
+  background:#fff; border:1px solid #eee; border-radius:12px; 
+  overflow:hidden; transition:box-shadow 0.2s ease; 
+}
+.hp-recipe:hover { box-shadow:0 6px 16px rgba(0,0,0,.08); }
+.hp-recipe img { width:100%; height:150px; object-fit:cover; }
+.hp-recipe figcaption { padding:10px 12px; font-size:13px; color:#374151; }
+.center { text-align:center; }
+.hp-ghost {
+  background:#fff; border:1px solid #111; 
+  padding:12px 20px; border-radius:26px; 
+  font-weight:700; cursor:pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.hp-ghost:hover { background:#111; color:#fff; }
+
+/* FOOTER */
+.hp-footer { background:#0f172a; color:#cbd5e1; }
+.hp-footer-top {
+  max-width: 1100px; margin: 0 auto; padding: 28px 16px;
+  display:grid; gap:18px; grid-template-columns: repeat(3,1fr);
+}
+.hp-footer-top h4 { color:#fff; margin:0 0 6px; }
+.hp-footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.08); 
+  padding: 14px 16px; text-align:center;
+}
+.hp-footer-bottom .social a { color:#cbd5e1; margin:0 8px; text-decoration:none; font-size:16px; }
+.hp-footer-bottom p { margin:10px 0 0; font-size:13px; }
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .hp-ways-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .hp-features-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .hp-recipes-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}
+@media (max-width: 780px) {
+  .hp-phone-preview { grid-template-columns: 1fr; margin-left:0; text-align:center; }
+  .hp-contact-grid { grid-template-columns: 1fr; }
+  .hp-ways-grid { grid-template-columns: 1fr; }
+  .hp-features-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .hp-recipes-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .hp-hero h1 { font-size: 28px; }
+  .hp-hero p { font-size:14px; }
+}
+
+/* LEASING SITES CTA */
+.hp-leasing {
+  padding: 80px 16px;
+  background: linear-gradient(135deg, #a1ffce, #faffd1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.hp-leasing:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.hp-leasing-inner h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #056608;
+  margin-bottom: 16px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+.hp-leasing-inner p {
+  font-size: 18px;
+  color: #2b2b2b;
+  max-width: 700px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+.hp-leasing-btn {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px 40px;
+  border-radius: 36px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.hp-leasing-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+  background: linear-gradient(135deg, #00ffd5, #006aff);
+}
+

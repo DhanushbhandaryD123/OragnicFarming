@@ -1,0 +1,191 @@
+/* Orders.css */
+
+/* Container */
+.orders-container {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Heading */
+.orders-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1f2937; /* gray-800 */
+}
+
+/* Table */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table thead {
+  background: #f3f4f6; /* gray-100 */
+}
+
+.orders-table th {
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #374151; /* gray-700 */
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.orders-table td {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  color: #4b5563; /* gray-600 */
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Hover row effect */
+.orders-table tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Payment badge */
+.badge-paid {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #065f46; /* green-700 */
+  background: #d1fae5; /* green-100 */
+  border-radius: 9999px;
+}
+
+/* Status select */
+.status-select {
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.status-select:focus {
+  outline: none;
+  border-color: #3b82f6; /* blue-500 */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
+}
+
+/* Action buttons */
+.btn {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+}
+
+.btn-success {
+  background: #10b981;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #059669;
+}
+
+/* Tracking panel */
+.tracking-panel {
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Form inputs */
+.tracking-panel label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.tracking-panel input {
+  margin-top: 0.25rem;
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tracking-panel input:focus {
+  outline: none;
+  border-color: #ff9800;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
+}
+.tracking-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 1rem;
+  align-items: end;
+  padding: 1rem;
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  max-width: 600px;
+}
+
+.tracking-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.tracking-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.3rem;
+}
+
+.tracking-input {
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.tracking-input:focus {
+  border-color: #ff9800;
+  box-shadow: 0 0 4px rgba(26, 115, 232, 0.3);
+  outline: none;
+}
+
+.tracking-button-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.btn-append-status {
+  background: black;
+  color: white;
+  border: none;
+  padding: 0.55rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-append-status:hover {
+  background: lightgrey;
+}
